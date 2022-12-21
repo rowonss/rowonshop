@@ -1,5 +1,6 @@
 package mybaproject.rowonshop.domain.users.service;
 
+import java.util.HashMap;
 import java.util.List;
 import mybaproject.rowonshop.global.dto.User;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +16,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getUserList() {
         return userMapper.getUserList();
+    }
+
+    @Override
+    public void SignUp(HashMap<String, Object> user){
+        userMapper.SignUp(user);
     }
 
 }

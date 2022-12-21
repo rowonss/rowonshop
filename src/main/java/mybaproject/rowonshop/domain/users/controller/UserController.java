@@ -1,9 +1,12 @@
 package mybaproject.rowonshop.domain.users.controller;
 
+import java.util.HashMap;
 import java.util.List;
 import mybaproject.rowonshop.global.dto.User;
 import mybaproject.rowonshop.domain.users.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.RequiredArgsConstructor;
@@ -21,6 +24,11 @@ public class UserController {
     @GetMapping("/user")
     public String user() {
         return userService.getUserList().get(0).getUserName();
+    }
+
+    @PostMapping("/SignUp")
+    public void SignUp (@RequestBody HashMap<String, Object> user) {
+        userService.SignUp(user);
     }
 
 }
