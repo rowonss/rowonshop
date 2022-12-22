@@ -1,7 +1,9 @@
 package mybaproject.rowonshop.domain.users.controller;
 
+import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.List;
+
 import mybaproject.rowonshop.global.dto.User;
 import mybaproject.rowonshop.domain.users.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,8 +29,15 @@ public class UserController {
     }
 
     @PostMapping("/SignUp")
-    public void SignUp (@RequestBody HashMap<String, Object> user) {
-        userService.SignUp(user);
+    public void SignUp(User user) {
+
+        System.out.println(user);
+
+        Timestamp time = new Timestamp(System.currentTimeMillis());
+
+        User s_user = new User(user.getUserMemberNum(), user.getUserId(), user.getUserPassword(), user.getUserNickname(), user.getUserName(), time.toString());
+
+        userService.SignUp(s_user);
     }
 
 }

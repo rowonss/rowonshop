@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void SignUp(HashMap<String, Object> user){
+    public void SignUp(User user){
         userMapper.SignUp(user);
     }
 

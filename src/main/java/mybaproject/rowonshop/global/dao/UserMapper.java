@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
 public interface UserMapper {
     List<User> getUserList();
 
-    void SignUp(HashMap<String, Object> user);
+    void SignUp(User user);
 }

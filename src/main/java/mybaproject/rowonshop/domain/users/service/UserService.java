@@ -9,5 +9,5 @@ import org.springframework.stereotype.Service;
 public interface UserService {
     List<User> getUserList();
 
-    void SignUp(HashMap<String, Object> user);
+    void SignUp(User user);
 }

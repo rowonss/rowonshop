@@ -7,7 +7,7 @@
     </select>
 
     <insert id="SignUp" parameterType="mybaproject.rowonshop.global.dto.User">
-        INSERT INTO user VALUES (#userMemberNum, #userId, #userPassword, #userName, #userNickname, DEFAULT)
+        INSERT INTO user VALUES (#{userMemberNum}, #{userId}, #{userPassword}, #{userName}, #{userNickname}, DEFAULT)
     </insert>
 
 </mapper>
