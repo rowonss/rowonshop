@@ -7,7 +7,7 @@
     </select>
 
     <insert id="SignUp" parameterType="mybaproject.rowonshop.global.dto.User">
-        INSERT INTO user VALUES (#{userMemberNum}, #{userId}, #{userPassword}, #{userName}, #{userNickname}, DEFAULT)
+        INSERT INTO user (userNo,userId,userName,userNickname,userJoinDate,userPassword) VALUES (DEFAULT, #{userId}, #{userName}, #{userNickname}, DEFAULT, HEX(AES_ENCRYPT(#{userPassword},'fhdnjsTM')));
     </insert>
 
 </mapper>

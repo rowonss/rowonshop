@@ -31,11 +31,7 @@ public class UserController {
     @PostMapping("/SignUp")
     public void SignUp(User user) {
 
-        System.out.println(user);
-
-        Timestamp time = new Timestamp(System.currentTimeMillis());
-
-        User s_user = new User(user.getUserMemberNum(), user.getUserId(), user.getUserPassword(), user.getUserNickname(), user.getUserName(), time.toString());
+        User s_user = new User( user.getUserId(),user.getUserPassword(),user.getUserName(), user.getUserNickname());
 
         userService.SignUp(s_user);
     }
