@@ -28,7 +28,7 @@ public class UserController {
         return userService.getUserList().get(0).getUserName();
     }
 
-    @PostMapping("/SignUp")
+    @PostMapping("/userSignUp")
     public void SignUp(User user) {
 
         User s_user = new User( user.getUserId(),user.getUserPassword(),user.getUserName(), user.getUserNickname());
