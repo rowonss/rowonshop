@@ -4,6 +4,8 @@ import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.List;
 
+import mybaproject.rowonshop.domain.users.service.EmailService;
+import mybaproject.rowonshop.global.dto.Mail;
 import mybaproject.rowonshop.global.dto.User;
 import mybaproject.rowonshop.domain.users.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +19,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
+
+    private final EmailService emailService;
 
     @GetMapping("/hello")
     public String hello() {
@@ -34,6 +38,11 @@ public class UserController {
         User s_user = new User( user.getUserId(),user.getUserPassword(),user.getUserName(), user.getUserNickname());
 
         userService.SignUp(s_user);
+    }
+    @PostMapping("/sendmail")
+    public void sendmail(Mail mail) throws Exception {
+        System.out.println(mail.getAddress());
+        emailService.sendSimpleMessage(mail.getAddress());
     }
 
 }

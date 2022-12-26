@@ -1,13 +1,11 @@
 package mybaproject.rowonshop.domain.users.service;
 
-import javax.mail.Message.RecipientType;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 
+import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;
@@ -20,17 +18,16 @@ public class EmailServiceImpl implements EmailService{
 
     public static final String ePw = createKey();
 
-    private MimeMessage createMessage(String to)throws Exception{
-        System.out.println("보내는 대상 : "+ to);
-        System.out.println("인증 번호 : "+ePw);
-        MimeMessage message = emailSender.createMimeMessage();
+    @Override
+    public void sendSimpleMessage(String to) throws Exception {
 
-        message.addRecipients(RecipientType.TO, to);//보내는 대상
-        message.setSubject("이메일 인증 테스트");//제목
+        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
+
+        MimeMessage message = emailSender.createMimeMessage();
 
         String msgg="";
         msgg+= "<div style='margin:20px;'>";
-        msgg+= "<h1> 안녕하세요 임준호입니다. </h1>";
+        msgg+= "<h1> 안녕하세요 김종기입니다. </h1>";
         msgg+= "<br>";
         msgg+= "<p>아래 코드를 복사해 입력해주세요<p>";
         msgg+= "<br>";
@@ -42,12 +39,18 @@ public class EmailServiceImpl implements EmailService{
         msgg+= "CODE : <strong>";
         msgg+= ePw+"</strong><div><br/> ";
         msgg+= "</div>";
+
+        message.addRecipients(MimeMessage.RecipientType.TO, to);//보내는 대상
+        message.setSubject("이메일 인증 테스트");//제목
         message.setText(msgg, "utf-8", "html");//내용
-        message.setFrom(new InternetAddress("properties에 입력한 이메일","limjunho"));//보내는 사람
 
-        return message;
+        simpleMailMessage.setTo(to);
+        simpleMailMessage.setSubject("test");
+        simpleMailMessage.setText(msgg);
+
+        emailSender.send(message);
     }
-
+    //		인증코드 만들기
     public static String createKey() {
         StringBuffer key = new StringBuffer();
         Random rnd = new Random();
@@ -70,18 +73,8 @@ public class EmailServiceImpl implements EmailService{
                     break;
             }
         }
+
         return key.toString();
     }
-    @Override
-    public String sendSimpleMessage(String to)throws Exception {
-        // TODO Auto-generated method stub
-        MimeMessage message = createMessage(to);
-        try{//예외처리
-            emailSender.send((MimeMessagePreparator) message);
-        }catch(MailException es){
-            es.printStackTrace();
-            throw new IllegalArgumentException();
-        }
-        return ePw;
-    }
+
 }
