@@ -25,6 +25,7 @@ public class EmailServiceImpl implements EmailService{
 
         MimeMessage message = emailSender.createMimeMessage();
 
+
         String msgg="";
         msgg+= "<div style='margin:20px;'>";
         msgg+= "<h1> 안녕하세요 김종기입니다. </h1>";
