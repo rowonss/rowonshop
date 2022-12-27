@@ -19,16 +19,13 @@ public class EmailServiceImpl implements EmailService{
     public static final String ePw = createKey();
 
     @Override
-    public void sendSimpleMessage(String to) throws Exception {
-
-        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
+    public String sendSimpleMessage(String to) throws Exception {
 
         MimeMessage message = emailSender.createMimeMessage();
 
-
         String msgg="";
         msgg+= "<div style='margin:20px;'>";
-        msgg+= "<h1> 안녕하세요 김종기입니다. </h1>";
+        msgg+= "<h1> 안녕하세요. 세상에서 얼굴 제일 큰 고양이 입니다.</h1>";
         msgg+= "<br>";
         msgg+= "<p>아래 코드를 복사해 입력해주세요<p>";
         msgg+= "<br>";
@@ -45,11 +42,9 @@ public class EmailServiceImpl implements EmailService{
         message.setSubject("이메일 인증 테스트");//제목
         message.setText(msgg, "utf-8", "html");//내용
 
-        simpleMailMessage.setTo(to);
-        simpleMailMessage.setSubject("test");
-        simpleMailMessage.setText(msgg);
-
         emailSender.send(message);
+
+        return ePw;
     }
     //		인증코드 만들기
     public static String createKey() {

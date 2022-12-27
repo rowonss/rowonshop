@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5f6fd7-1e34-4699-9a0f-bbcd42855435" name="Changes" comment="2022 12 26 깃 에러 디버그" />
+    <list default="true" id="9d5f6fd7-1e34-4699-9a0f-bbcd42855435" name="Changes" comment="2022 12 26 깃 에러 디버그">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/EmailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/EmailServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/EmailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +185,7 @@
       <workItem from="1671684356632" duration="14703000" />
       <workItem from="1671877518234" duration="3856000" />
       <workItem from="1671957857251" duration="10786000" />
-      <workItem from="1672040461451" duration="9063000" />
+      <workItem from="1672040461451" duration="15726000" />
     </task>
     <task id="LOCAL-00001" summary="2022 12 15">
       <created>1671088394122</created>
@@ -309,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672066839055</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="2022 12 26 깃 에러 디버그">
+      <created>1672066951204</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672066951204</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

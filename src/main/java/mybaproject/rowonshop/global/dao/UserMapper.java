@@ -12,4 +12,6 @@ public interface UserMapper {
     List<User> getUserList();
 
     void SignUp(User user);
+
+    List<User> EmailContains(String emailAddress);
 }

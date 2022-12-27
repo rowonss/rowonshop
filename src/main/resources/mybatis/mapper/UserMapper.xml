@@ -10,4 +10,8 @@
         INSERT INTO user (userNo,userId,userName,userNickname,userJoinDate,userPassword) VALUES (DEFAULT, #{userId}, #{userName}, #{userNickname}, DEFAULT, HEX(AES_ENCRYPT(#{userPassword},'fhdnjsTM')));
     </insert>
 
+    <select id="EmailContains" parameterType="String" resultType="mybaproject.rowonshop.global.dto.User">
+        SELECT userEmail FROM user WHERE userEmail = #{value}
+    </select>
+
 </mapper>

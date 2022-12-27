@@ -4,5 +4,5 @@ import mybaproject.rowonshop.global.dto.Mail;
 
 public interface EmailService {
 
-    void sendSimpleMessage(String to)throws Exception;
+    String sendSimpleMessage(String to)throws Exception;
 }

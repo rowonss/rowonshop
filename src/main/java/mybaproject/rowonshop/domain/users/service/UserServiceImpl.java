@@ -23,4 +23,10 @@ public class UserServiceImpl implements UserService {
         userMapper.SignUp(user);
     }
 
+    @Override
+    public List<User> EmailContains(String emailaddress) {
+        return userMapper.EmailContains(emailaddress);
+    }
+
+
 }

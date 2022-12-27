@@ -35,14 +35,21 @@ public class UserController {
     @PostMapping("/userSignUp")
     public void SignUp(User user) {
 
-        User s_user = new User( user.getUserId(),user.getUserPassword(),user.getUserName(), user.getUserNickname());
+        User s_user = new User( user.getUserId(),user.getUserPassword(),user.getUserName(), user.getUserNickname(), user.getUserEmail());
 
         userService.SignUp(s_user);
     }
     @PostMapping("/sendmail")
-    public void sendmail(Mail mail) throws Exception {
-        System.out.println(mail.getAddress());
-        emailService.sendSimpleMessage(mail.getAddress());
+    public String sendmail(Mail mail) throws Exception {
+
+        System.out.println(userService.EmailContains(mail.getAddress()));
+
+        if(userService.EmailContains(mail.getAddress()).size() > 0){
+            System.out.println("왜이래");
+            return "false";
+        }
+
+        return emailService.sendSimpleMessage(mail.getAddress());
     }
 
 }

@@ -16,14 +16,19 @@ public class User {
     private String userPassword;
     private String userName;
     private String userNickname;
+
     private String userJoinDate;
+
     private String userUpdateDate;
 
-    public User (String userId,String userpassword, String userName, String userNickname){
+    private String userEmail;
+
+    public User (String userId,String userpassword, String userName, String userNickname, String userEmail){
         this.userId = userId;
         this.userPassword = userpassword;
         this.userName = userName;
         this.userNickname = userNickname;
+        this.userEmail = userEmail;
     }
 }
 

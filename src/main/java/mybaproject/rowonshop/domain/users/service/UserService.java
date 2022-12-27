@@ -10,4 +10,6 @@ public interface UserService {
     List<User> getUserList();
 
     void SignUp(User user);
+
+    List<User> EmailContains (String emailaddress);
 }
