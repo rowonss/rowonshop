@@ -45,7 +45,6 @@ public class UserController {
         System.out.println(userService.EmailContains(mail.getAddress()));
 
         if(userService.EmailContains(mail.getAddress()).size() > 0){
-            System.out.println("왜이래");
             return "false";
         }
 

@@ -7,7 +7,11 @@
     </select>
 
     <insert id="SignUp" parameterType="mybaproject.rowonshop.global.dto.User">
-        INSERT INTO user (userNo,userId,userName,userNickname,userJoinDate,userPassword) VALUES (DEFAULT, #{userId}, #{userName}, #{userNickname}, DEFAULT, HEX(AES_ENCRYPT(#{userPassword},'fhdnjsTM')));
+        INSERT INTO user (userNo,userId,userName,userNickname,userJoinDate,userPassword, userEmail) VALUES (DEFAULT, #{userId}, #{userName}, #{userNickname}, DEFAULT, HEX(AES_ENCRYPT(#{userPassword},'fhdnjsTM')), #{userEmail});
     </insert>
+
+    <select id="EmailContains" parameterType="String" resultType="mybaproject.rowonshop.global.dto.User">
+        SELECT userEmail FROM user WHERE userEmail = #{value}
+    </select>
 
 </mapper>
