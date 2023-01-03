@@ -24,6 +24,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public List<User> userIdContains(String userId) {
+        return userMapper.userIdContains(userId);
+    }
+
+    @Override
     public List<User> EmailContains(String emailaddress) {
         return userMapper.EmailContains(emailaddress);
     }

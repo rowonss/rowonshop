@@ -14,4 +14,8 @@
         SELECT userEmail FROM user WHERE userEmail = #{value}
     </select>
 
+    <select id="userIdContains" parameterType="String" resultType="mybaproject.rowonshop.global.dto.User">
+        SELECT userId FROM user WHERE userId = #{value}
+    </select>
+
 </mapper>

@@ -51,4 +51,10 @@ public class UserController {
         return emailService.sendSimpleMessage(mail.getAddress());
     }
 
+    @PostMapping("/userIdContains")
+    public boolean userIdcontains(User user) {
+
+        return userService.userIdContains(user.getUserId()).size() == 0;
+    }
+
 }

@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5f6fd7-1e34-4699-9a0f-bbcd42855435" name="Changes" comment="2023 01 02 로컬db로 변경">
+    <list default="true" id="9d5f6fd7-1e34-4699-9a0f-bbcd42855435" name="Changes" comment="2023 01 03 회원가입 폼 수정">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
     </list>
@@ -168,7 +187,9 @@
       <workItem from="1672040461451" duration="16030000" />
       <workItem from="1672118885086" duration="3813000" />
       <workItem from="1672632156010" duration="2159000" />
-      <workItem from="1672720278372" duration="6651000" />
+      <workItem from="1672720278372" duration="7184000" />
+      <workItem from="1672742951490" duration="2383000" />
+      <workItem from="1672767922060" duration="1459000" />
     </task>
     <task id="LOCAL-00001" summary="2022 12 15">
       <created>1671088394122</created>
@@ -338,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672632972422</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="2023 01 03 회원가입 폼 수정">
+      <created>1672731554696</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672731554696</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +394,8 @@
     <MESSAGE value="2022 12 26 깃 에러 디버그" />
     <MESSAGE value="2022 12 26 이미 등록된 이메일 체크" />
     <MESSAGE value="2023 01 02 로컬db로 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023 01 02 로컬db로 변경" />
+    <MESSAGE value="2023 01 03 회원가입 폼 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023 01 03 회원가입 폼 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
