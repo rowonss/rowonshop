@@ -35,8 +35,15 @@ public class UserController {
     @PostMapping("/userSignUp")
     public void SignUp(User user) {
 
-        User s_user = new User( user.getUserId(),user.getUserPassword(),user.getUserName(), user.getUserNickname(), user.getUserEmail());
-
+        User s_user = new User(
+                user.getUserId(),
+                user.getUserPassword(),
+                user.getUserName(),
+                user.getUserNickname(),
+                user.getUserEmail(),
+                user.getUseraddressMain(),
+                user.getUseraddressSub(),
+                user.getUseraddressCode());
         userService.SignUp(s_user);
     }
     @PostMapping("/sendmail")
