@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5f6fd7-1e34-4699-9a0f-bbcd42855435" name="Changes" comment="2023 01 04 다음카카오 주소 API 추가">
+    <list default="true" id="9d5f6fd7-1e34-4699-9a0f-bbcd42855435" name="Changes" comment="2023 01 05 다음카카오 주소 API 수정 및 적용 / 회원가입 페이지 종료">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dto/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +177,9 @@
       <workItem from="1672720278372" duration="7184000" />
       <workItem from="1672742951490" duration="2383000" />
       <workItem from="1672767922060" duration="8300000" />
-      <workItem from="1672901830778" duration="3353000" />
+      <workItem from="1672901830778" duration="3391000" />
+      <workItem from="1672983106819" duration="1214000" />
+      <workItem from="1673077687619" duration="1962000" />
     </task>
     <task id="LOCAL-00001" summary="2022 12 15">
       <created>1671088394122</created>
@@ -364,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672817366993</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="2023 01 05 다음카카오 주소 API 수정 및 적용 / 회원가입 페이지 종료">
+      <created>1672912769022</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1672912769022</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +408,9 @@
     <MESSAGE value="2023 01 03 회원가입 폼 수정" />
     <MESSAGE value="2023 01 04 회원가입 예외처리" />
     <MESSAGE value="2023 01 04 다음카카오 주소 API 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023 01 04 다음카카오 주소 API 추가" />
+    <MESSAGE value="2023 01 05 다음카카오 주소 API 수정 및 적용" />
+    <MESSAGE value="2023 01 05 다음카카오 주소 API 수정 및 적용 / 회원가입 페이지 종료" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023 01 05 다음카카오 주소 API 수정 및 적용 / 회원가입 페이지 종료" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
