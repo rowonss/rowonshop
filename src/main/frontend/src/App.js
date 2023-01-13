@@ -1,14 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import {Routes, Route, Link} from "react-router-dom";
 import axios from 'axios';
-import Layout from "./headerAndfooter/Layout";
+import Layout from "./Layout/Layout";
 
 function App() {
 
     return(
         <div>
             <Layout>
-
             </Layout>
         </div>
     )

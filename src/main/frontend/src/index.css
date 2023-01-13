@@ -1,23 +1,182 @@
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.not_logged_massage {
+    padding-left: 40px;
+}
+
+.not_logged {
+    padding-left: 40px;
+    list-style: none;
+}
+
+.not_logged > p {
+    font-family: 'LINESeedKR-Bd';
+}
+
+.not_logged > li {
+    font-family: 'LINESeedKR-Bd';
+    float: left;
+}
+
+.SideMenu {
+    display: grid;
+    grid-template-rows: 145px 130px 70px auto;
+    width: 250px;
+    height: auto;
+    border: solid black 1px;
+}
 
 
 .header_main {
-  width: 1200px;
-  margin-left :auto;
-  margin-right: auto;
-  display: block;
-  border: solid black 1px;
+    background-color: #7895B2;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.header_main_Logo>a>img{
-  display: block;
-  margin: auto;
+.main_Logo > a > img {
+    display: block;
+    margin: auto;
 }
 
-.header_main_LogoAndInfo{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.NavLink:hover {
+    color: #bad7e9;
+    background-color: #2b3467;
+    transition-property: color, background-color;
+    transition-duration: 330ms;
 }
 
-.header_main_LogoAndInfo>div{
-  display: inline;
+.NavLink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2b3467;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'KOTRAHOPE';
+    text-align: center;
+    display: block;
+}
+
+.main_shopMenu > div >li {
+    float: left;
+    list-style: none;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.main_shopMenu {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main_shopMenu_box {
+    display: block;
+    border: solid black 1px;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.search_text {
+    font-family: LINESeedKR-Bd;
+    font-size: 20px;
+    height: 25px;
+    padding-left: 3px;
+    width: 110px;
+    border-color: transparent;
+    margin-top: -1px;
+}
+
+
+.main_Nav > ul {
+    font-family: LINESeedKR-Bd;
+    list-style: none;
+}
+
+.main_Nav > ul > li {
+    margin-bottom: 30px;
+}
+
+.Main_Nav_head {
+    font-size: 25px;
+    padding-bottom: 5px;
+    border-bottom: solid black 1px;
+    width: 160px;
+}
+
+.SignUp_box {
+    display: block;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.SignUp_box > ul{
+    font-family: 'LINESeedKR-Bd';
+    list-style: none;
+}
+
+.SignUp_box > ul > li{
+    margin-bottom: 20px;
+}
+
+.SignUp_box > ul > li >input{
+    width: 330px;
+    height: 30px;
+}
+
+.postCode{
+    width: 60px;
+    height: 30px;
+}
+
+.SignUp_box > ul > li:nth-child(3){
+    margin-top: 0;
+    font-size: 5px;
+    color: cadetblue;
+}
+
+.SignUp_box > ul > li> button{
+    margin-left: 10px;
+}
+
+.search_button {
+    padding-left: 0;
+    margin-top: -3px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: -5px;
+    background-color: transparent;
+}
+
+.Main_box {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 250px 1400px;
+    grid-template-rows: 1fr;
+}
+
+.Main_form {
+    margin-left: 30px;
 }
