@@ -18,6 +18,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 public class UserController {
+    
     private final UserService userService;
 
     private final EmailService emailService;
@@ -48,8 +49,6 @@ public class UserController {
     }
     @PostMapping("/sendmail")
     public String sendmail(Mail mail) throws Exception {
-
-        System.out.println(userService.EmailContains(mail.getAddress()));
 
         if(userService.EmailContains(mail.getAddress()).size() > 0){
             return "false";
