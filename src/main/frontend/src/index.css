@@ -39,7 +39,7 @@ body {
     grid-template-rows: 145px 130px 70px auto;
     width: 250px;
     height: auto;
-    border: solid black 1px;
+    /* border: solid black 1px; */
 }
 
 
