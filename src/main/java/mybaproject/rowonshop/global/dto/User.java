@@ -7,7 +7,6 @@ import lombok.Setter;
 
 
 @Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
@@ -17,9 +16,7 @@ public class User {
     private String userPassword;
     private String userName;
     private String userNickname;
-
     private String userJoinDate;
-
     private String userUpdateDate;
     private String userEmail;
     private String useraddressMain;
