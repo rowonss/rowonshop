@@ -45,6 +45,10 @@ public class UserController {
                 user.getUseraddressMain(),
                 user.getUseraddressSub(),
                 user.getUseraddressCode());
+        System.out.println(s_user.getUserPassword());
+        System.out.println(user.getUserId());
+
+        System.out.println(s_user.getUserId());
         userService.SignUp(s_user);
     }
     @PostMapping("/sendmail")

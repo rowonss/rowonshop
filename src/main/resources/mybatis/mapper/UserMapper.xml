@@ -8,7 +8,7 @@
     </select>
 
     <insert id="SignUp" parameterType="mybaproject.rowonshop.global.dto.User">
-        INSERT INTO user (userNo,
+        INSERT INTO user (userUUID,
                           userId,
                           userName,
                           userNickname,
