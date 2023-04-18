@@ -8,10 +8,7 @@ import mybaproject.rowonshop.domain.users.service.EmailService;
 import mybaproject.rowonshop.global.dto.Mail;
 import mybaproject.rowonshop.global.dto.User;
 import mybaproject.rowonshop.domain.users.service.UserService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import lombok.RequiredArgsConstructor;
 
@@ -34,22 +31,18 @@ public class UserController {
     }
 
     @PostMapping("/userSignUp")
-    public void SignUp(User user) {
+    public void userSignUp(@RequestParam("userId") String userId,
+                           @RequestParam("userPassword") String userPassword,
+                           @RequestParam("userName") String userName,
+                           @RequestParam("userNickname") String userNickname,
+                           @RequestParam("userEmail") String userEmail,
+                           @RequestParam("useraddressMain") String useraddressMain,
+                           @RequestParam("useraddressSub") String useraddressSub,
+                           @RequestParam("useraddressCode") String useraddressCode) {
 
-        User s_user = new User(
-                user.getUserId(),
-                user.getUserPassword(),
-                user.getUserName(),
-                user.getUserNickname(),
-                user.getUserEmail(),
-                user.getUseraddressMain(),
-                user.getUseraddressSub(),
-                user.getUseraddressCode());
-        System.out.println(s_user.getUserPassword());
-        System.out.println(user.getUserId());
+        User user = new User(userId, userPassword, userName, userNickname, userEmail, useraddressMain, useraddressSub, useraddressCode);
 
-        System.out.println(s_user.getUserId());
-        userService.SignUp(s_user);
+        userService.SignUp(user);
     }
     @PostMapping("/sendmail")
     public String sendmail(Mail mail) throws Exception {
@@ -62,9 +55,9 @@ public class UserController {
     }
 
     @PostMapping("/userIdContains")
-    public boolean userIdcontains(User user) {
+    public boolean userIdcontains(@RequestParam("userId") String userId) {
 
-        return userService.userIdContains(user.getUserId()).size() == 0;
+        return userService.userIdContains(userId).size() == 0;
     }
 
 }
