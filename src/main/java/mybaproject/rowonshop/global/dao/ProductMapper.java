@@ -1,6 +1,6 @@
 package mybaproject.rowonshop.global.dao;
 
-import mybaproject.rowonshop.global.dto.product;
+import mybaproject.rowonshop.global.dto.Product;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface ProductMapper {
 
-    List<product> getAllprocuts ();
+    List<Product> getAllprocuts ();
 
-    void insertProduct ();
+    void insertProduct (Product product);
 }

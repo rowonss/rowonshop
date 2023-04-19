@@ -2,6 +2,8 @@ package mybaproject.rowonshop.global.dao;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
+
 import mybaproject.rowonshop.global.dto.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
@@ -16,4 +18,6 @@ public interface UserMapper {
     List<User> EmailContains(String emailAddress);
 
     List<User> userIdContains(String userId);
+
+    Optional<User> Login(User user);
 }

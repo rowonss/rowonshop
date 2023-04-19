@@ -10,6 +10,7 @@ import mybaproject.rowonshop.global.dto.User;
 import mybaproject.rowonshop.domain.users.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
+
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -59,5 +60,7 @@ public class UserController {
 
         return userService.userIdContains(userId).size() == 0;
     }
+
+
 
 }

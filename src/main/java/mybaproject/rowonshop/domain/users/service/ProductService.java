@@ -1,13 +1,12 @@
 package mybaproject.rowonshop.domain.users.service;
 
-import mybaproject.rowonshop.global.dto.product;
+import mybaproject.rowonshop.global.dto.Product;
 
 import java.util.List;
 
 public interface ProductService {
 
-   List<product> getAllprocuts ();
+   List<Product> getAllprocuts ();
 
-   void insertProduct ();
-
+   void insertProduct(Product product);
 }

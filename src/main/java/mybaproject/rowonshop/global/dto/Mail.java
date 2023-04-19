@@ -8,7 +8,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Mail {
-
     private String address;
 
 }

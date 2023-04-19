@@ -3,9 +3,10 @@
 
 <mapper namespace="mybaproject.rowonshop.global.dao.ProductMapper">
 
-    <insert id="insertProduct" parameterType="mybaproject.rowonshop.global.dto.product">
+    <insert id="insertProduct" parameterType="mybaproject.rowonshop.global.dto.Product">
 
-
+        INSERT INTO product (nums, id, category, productName, price, stocks, mainImage, miniText)
+        VALUES (default, #{id}, #{category}, #{productName}, #{price}, #{stocks}, #{mainImage, jdbcType=BLOB}, #{miniText});
 
     </insert>
 

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5f6fd7-1e34-4699-9a0f-bbcd42855435" name="Changes" comment="2023 04 17">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/product.java" afterDir="false" />
+    <list default="true" id="9d5f6fd7-1e34-4699-9a0f-bbcd42855435" name="Changes" comment="2023 04 18">
+      <change afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/Security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
@@ -16,14 +17,32 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/domain/users/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dto/Mail.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dto/Mail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mybaproject/rowonshop/global/dto/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mybatis/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/config/SecurityConfiguration.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/domain/users/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dao/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dao/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mybaproject/rowonshop/global/dto/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
     </list>
@@ -53,6 +72,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="RowonShop" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="RowonShop" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="RowonShop" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -64,6 +94,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
+        <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="JavaScript File" />
         <option value="Class" />
@@ -85,27 +116,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/git/rowonshop&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;b5c1ee67d59a4e0b889127f714ac0aa4&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/Desktop/git/rowonshop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "b5c1ee67d59a4e0b889127f714ac0aa4",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wkq32\IdeaProjects\RowonShop\src\test" />
@@ -113,6 +144,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wkq32\IdeaProjects\RowonShop\src\main\frontend\src" />
       <recent name="C:\Users\wkq32\IdeaProjects\RowonShop\src\main\resources\mybatis" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="mybaproject.rowonshop.domain.users.controller.Jwt" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.RowonShopApplication">
@@ -208,7 +242,8 @@
       <workItem from="1680489379909" duration="2107000" />
       <workItem from="1680827244024" duration="22020000" />
       <workItem from="1681353697911" duration="21595000" />
-      <workItem from="1681782100063" duration="1984000" />
+      <workItem from="1681782100063" duration="28152000" />
+      <workItem from="1681869722755" duration="12639000" />
     </task>
     <task id="LOCAL-00001" summary="2022 12 15">
       <created>1671088394122</created>
@@ -420,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681708264614</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="2023 04 18">
+      <created>1681784917334</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1681784917335</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +497,8 @@
     <MESSAGE value="2023 01 05 다음카카오 주소 API 수정 및 적용 / 회원가입 페이지 종료" />
     <MESSAGE value="2023 01 11 TEST" />
     <MESSAGE value="2023 04 17" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023 04 17" />
+    <MESSAGE value="2023 04 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023 04 18" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

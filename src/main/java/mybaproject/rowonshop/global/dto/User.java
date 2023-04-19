@@ -1,9 +1,6 @@
 package mybaproject.rowonshop.global.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 @Getter
@@ -23,6 +20,8 @@ public class User {
     private String useraddressSub;
     private String useraddressCode;
 
+
+    @Builder
     public User (String userId,String userpassword, String userName, String userNickname, String userEmail, String useraddressMain, String useraddressSub, String useraddressCode){
         this.userId = userId;
         this.userPassword = userpassword;
