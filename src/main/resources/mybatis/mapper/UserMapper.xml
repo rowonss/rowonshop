@@ -38,7 +38,7 @@
     </select>
 
     <select id="userIdContains" parameterType="String" resultType="mybaproject.rowonshop.global.dto.User">
-        SELECT userId
+        SELECT *
         FROM user
         WHERE userId = #{value}
     </select>

@@ -17,5 +17,5 @@ public interface UserService {
 
     List<User> EmailContains (String emailaddress);
 
-    Optional<User> Login(User user);
+    Optional<User> findUserById(String userId);
 }
